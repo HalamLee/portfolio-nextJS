@@ -12,8 +12,8 @@ export default function Home() {
         <meta name="description" content="Lami's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="flex flex-col items-center justify-center min-h-screen text-gray-600 body-font">
-        <div className="container flex flex-col items-center px-5 py-24 mx-auto md:flex-row">
+      <section className="flex flex-col items-center justify-center min-h-[calc(100vh-156px)] text-gray-600 body-font">
+        <div className="container flex flex-col items-center px-5 mx-auto md:flex-row">
           <Hero />
         </div>
       </section>
