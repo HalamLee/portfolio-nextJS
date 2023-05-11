@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import DarkModeToggleButton from '../dark-mode-toggle-button';
 
 export default function Header() {
@@ -8,17 +9,7 @@ export default function Header() {
         <Link
           href="/"
           className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="w-10 h-10 p-2 text-white bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
+          <Image src="/profile.png" width={40} height={30} alt="profile" />
           <span className="ml-3 text-xl">Lami&apos;s Portfolio</span>
         </Link>
 
@@ -28,6 +19,11 @@ export default function Header() {
           </Link>
           <Link href="/projects" className="mr-5 hover:text-gray-900">
             Projects
+          </Link>
+          <Link
+            href="https://www.halamlee.com/"
+            className="mr-5 hover:text-gray-900">
+            Blog
           </Link>
           <Link
             href="mailto:halam.lee.lami@gmail.com"
